@@ -1,0 +1,51 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.9.03 Education (64-bit)
+//Part Number: GW1N-UV9EQ144C6/I5
+//Device: GW1N-9
+//Device Version: C
+//Created Time: Mon 09 16 16:22:23 2024
+
+IO_LOC "led_state" 82;
+IO_PORT "led_state" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_an_o[3]" 117;
+IO_PORT "disp_an_o[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_an_o[2]" 121;
+IO_PORT "disp_an_o[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_an_o[1]" 126;
+IO_PORT "disp_an_o[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_an_o[0]" 131;
+IO_PORT "disp_an_o[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[6]" 87;
+IO_PORT "disp_seg_o[6]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[5]" 97;
+IO_PORT "disp_seg_o[5]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[4]" 118;
+IO_PORT "disp_seg_o[4]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[3]" 122;
+IO_PORT "disp_seg_o[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[2]" 128;
+IO_PORT "disp_seg_o[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[1]" 132;
+IO_PORT "disp_seg_o[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "disp_seg_o[0]" 136;
+IO_PORT "disp_seg_o[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "power_switch" 15;
+IO_PORT "power_switch" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "set_buttons[3]" 49;
+IO_PORT "set_buttons[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "set_buttons[2]" 47;
+IO_PORT "set_buttons[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "set_buttons[1]" 45;
+IO_PORT "set_buttons[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "set_buttons[0]" 43;
+IO_PORT "set_buttons[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "set_time_mode" 41;
+IO_PORT "set_time_mode" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "pause_resume" 34;
+IO_PORT "pause_resume" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "rst" 39;
+IO_PORT "rst" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "clk" 11;
+IO_PORT "clk" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;

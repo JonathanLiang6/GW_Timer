@@ -1,0 +1,11 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1N-9C" pn="GW1N-UV9EQ144C6/I5">gw1n9c-024</Device>
+    <FileList>
+        <File path="src/time.v" type="file.verilog" enable="1"/>
+        <File path="src/Time_project.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

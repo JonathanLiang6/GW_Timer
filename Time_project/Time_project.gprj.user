@@ -1,0 +1,24 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE ProjectUserData>
+<UserConfig>
+    <Version>1.0</Version>
+    <FlowState>
+        <Process ID="Synthesis" State="2"/>
+        <Process ID="Pnr" State="2"/>
+        <Process ID="Gao" State="2"/>
+        <Process ID="Rtl_Gao" State="2"/>
+    </FlowState>
+    <ResultFileList>
+        <ResultFile ResultFileType="RES.netlist" ResultFilePath="impl/gwsynthesis/Time_project.vg"/>
+        <ResultFile ResultFileType="RES.pnr.bitstream" ResultFilePath="impl/pnr/Time_project.fs"/>
+        <ResultFile ResultFileType="RES.pnr.pin.rpt" ResultFilePath="impl/pnr/Time_project.pin.html"/>
+        <ResultFile ResultFileType="RES.pnr.posp.bin" ResultFilePath="impl/pnr/Time_project.db"/>
+        <ResultFile ResultFileType="RES.pnr.pwr.rpt" ResultFilePath="impl/pnr/Time_project.power.html"/>
+        <ResultFile ResultFileType="RES.pnr.report" ResultFilePath="impl/pnr/Time_project.rpt.html"/>
+        <ResultFile ResultFileType="RES.pnr.timing.paths" ResultFilePath="impl/pnr/Time_project.timing_paths"/>
+        <ResultFile ResultFileType="RES.pnr.timing.rpt" ResultFilePath="impl/pnr/Time_project.tr.html"/>
+        <ResultFile ResultFileType="RES.syn.report" ResultFilePath="impl/gwsynthesis/Time_project_syn.rpt.html"/>
+        <ResultFile ResultFileType="RES.syn.resource" ResultFilePath="impl/gwsynthesis/Time_project_syn_rsc.xml"/>
+    </ResultFileList>
+    <Ui>000000ff00000001fd00000003000000000000010b000002befc0200000002fb00000030004600700067006100500072006f006a006500630074002e00500061006e0065006c002e00440065007300690067006e0100000039000002be0000000000000000fb00000036004600700067006100500072006f006a006500630074002e00500061006e0065006c002e00480069006500720061007200630068007902000003dc000000ea0000010b000002390000000100000100000002befc0200000001fb00000032004600700067006100500072006f006a006500630074002e00500061006e0065006c002e00500072006f00630065007300730100000039000002be0000000000000000000000030000078000000110fc0100000001fc0000000000000780000000ab00fffffffa000000000100000002fb00000032004600700067006100500072006f006a006500630074002e00500061006e0065006c002e00470065006e006500720061006c0100000000ffffffff0000005300fffffffb0000002e004600700067006100500072006f006a006500630074002e00500061006e0065006c002e004900730073007500650100000000ffffffff000000ab00ffffff0000056d000002be00000004000000040000000800000008fc000000010000000200000003000000220043006f00720065002e0054006f006f006c006200610072002e00460069006c00650100000000ffffffff0000000000000000000000220043006f00720065002e0054006f006f006c006200610072002e004500640069007401000000adffffffff0000000000000000000000240043006f00720065002e0054006f006f006c006200610072002e0054006f006f006c0073010000017fffffffff0000000000000000</Ui>
+</UserConfig>
