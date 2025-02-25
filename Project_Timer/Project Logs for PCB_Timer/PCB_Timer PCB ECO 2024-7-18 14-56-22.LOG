@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SEG1 Pin=Q1-1
+Removed Pin From Net: NetName=VCC Pin=Q1-3
+Added Pin To Net: NetName=VCC Pin=Q1-1
+Added Pin To Net: NetName=SEG1 Pin=Q1-3
+Added Room: Name=SCH_Timer

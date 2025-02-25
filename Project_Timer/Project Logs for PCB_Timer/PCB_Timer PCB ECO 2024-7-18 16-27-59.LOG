@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Netcoreboard_connector_32 Pin=coreboard_connector-32
+Added Pin To Net: NetName=Netcoreboard_connector_32 Pin=coreboard_connector-74
+Change Net Name : Old Net Name=Netcoreboard_connector_32 New Net Name=Netcoreboard_connector_74
+Added Room: Name=SCH_Timer

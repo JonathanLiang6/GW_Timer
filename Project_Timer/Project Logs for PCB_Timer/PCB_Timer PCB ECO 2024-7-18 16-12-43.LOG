@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=Netcoreboard_connector_63 Pin=coreboard_connector-63
+Removed Pin From Net: NetName=Netcoreboard_connector_67 Pin=coreboard_connector-67
+Removed Pin From Net: NetName=Netcoreboard_connector_71 Pin=coreboard_connector-71
+Removed Pin From Net: NetName=Netcoreboard_connector_75 Pin=coreboard_connector-75
+Removed Pin From Net: NetName=Netcoreboard_connector_61 Pin=RA-2
+Removed Pin From Net: NetName=Netcoreboard_connector_63 Pin=RB-2
+Removed Pin From Net: NetName=Netcoreboard_connector_65 Pin=RC-2
+Removed Pin From Net: NetName=Netcoreboard_connector_67 Pin=RD-2
+Removed Pin From Net: NetName=Netcoreboard_connector_75 Pin=RDP-2
+Removed Pin From Net: NetName=Netcoreboard_connector_69 Pin=RE-2
+Removed Pin From Net: NetName=Netcoreboard_connector_71 Pin=RF-2
+Removed Pin From Net: NetName=Netcoreboard_connector_73 Pin=RG-2
+Added Pin To Net: NetName=Netcoreboard_connector_63 Pin=coreboard_connector-45
+Added Pin To Net: NetName=Netcoreboard_connector_67 Pin=coreboard_connector-49
+Added Pin To Net: NetName=Netcoreboard_connector_71 Pin=coreboard_connector-53
+Added Pin To Net: NetName=Netcoreboard_connector_75 Pin=coreboard_connector-57
+Added Pin To Net: NetName=Netcoreboard_connector_63 Pin=RA-2
+Added Pin To Net: NetName=Netcoreboard_connector_67 Pin=RB-2
+Added Pin To Net: NetName=Netcoreboard_connector_71 Pin=RC-2
+Added Pin To Net: NetName=Netcoreboard_connector_75 Pin=RD-2
+Added Pin To Net: NetName=Netcoreboard_connector_73 Pin=RDP-2
+Added Pin To Net: NetName=Netcoreboard_connector_61 Pin=RE-2
+Added Pin To Net: NetName=Netcoreboard_connector_65 Pin=RF-2
+Added Pin To Net: NetName=Netcoreboard_connector_69 Pin=RG-2
+Change Net Name : Old Net Name=Netcoreboard_connector_63 New Net Name=Netcoreboard_connector_45
+Change Net Name : Old Net Name=Netcoreboard_connector_67 New Net Name=Netcoreboard_connector_49
+Change Net Name : Old Net Name=Netcoreboard_connector_71 New Net Name=Netcoreboard_connector_53
+Change Net Name : Old Net Name=Netcoreboard_connector_75 New Net Name=Netcoreboard_connector_57
+Added Room: Name=SCH_Timer
