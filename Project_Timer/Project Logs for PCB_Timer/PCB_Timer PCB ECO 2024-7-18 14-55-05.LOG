@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=VCC Pin=Q1-1
-Removed Pin From Net: NetName=SEG1 Pin=Q1-3
-Change Component Comment : Designator=K5 Old Comment=  New Comment=
-Change Component Comment : Designator=K6 Old Comment=  New Comment=
-Added Pin To Net: NetName=SEG1 Pin=Q1-1
-Added Pin To Net: NetName=VCC Pin=Q1-3
-Change Class Name : Old Net Name=Sheet1 New Net Name=SCH_Timer
-Added Room: Name=SCH_Timer
