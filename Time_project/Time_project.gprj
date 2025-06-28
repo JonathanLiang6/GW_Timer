@@ -1,11 +1,23 @@
 <?xml version="1" encoding="UTF-8"?>
 <!DOCTYPE gowin-fpga-project>
+<!-- 
+    高云FPGA秒表项目配置文件
+    器件：GW1N-UV9EQ144C6/I5
+    功能：多功能秒表设计
+    包含：主设计文件、约束文件、测试文件
+-->
 <Project>
     <Template>FPGA</Template>
     <Version>5</Version>
     <Device name="GW1N-9C" pn="GW1N-UV9EQ144C6/I5">gw1n9c-024</Device>
     <FileList>
+        <!-- 主设计文件 -->
         <File path="src/time.v" type="file.verilog" enable="1"/>
+        
+        <!-- 约束文件 -->
         <File path="src/Time_project.cst" type="file.cst" enable="1"/>
+        
+        <!-- 测试文件 (可选，用于仿真) -->
+        <File path="src/time_tb.v" type="file.verilog" enable="0"/>
     </FileList>
 </Project>

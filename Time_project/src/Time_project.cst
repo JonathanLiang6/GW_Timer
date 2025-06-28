@@ -1,3 +1,17 @@
+// ===================================================================
+// 文件名：Time_project.cst
+// 功能：高云FPGA秒表项目的引脚约束文件
+// 器件：GW1N-UV9EQ144C6/I5 (EQ144封装)
+// 工具版本：V1.9.9.03 Education (64-bit)
+// 创建时间：Mon 09 16 16:22:23 2024
+// 
+// 引脚分配说明：
+// - 所有IO使用LVCMOS18标准
+// - 上拉模式：PULL_MODE=UP
+// - 驱动强度：DRIVE=8mA
+// - IO电压：BANK_VCCIO=1.8V
+// ===================================================================
+
 //Copyright (C)2014-2024 Gowin Semiconductor Corporation.
 //All rights reserved. 
 //File Title: Physical Constraints file
@@ -7,45 +21,66 @@
 //Device Version: C
 //Created Time: Mon 09 16 16:22:23 2024
 
+// ==================== 输出信号引脚分配 ====================
+
+// 状态指示灯
 IO_LOC "led_state" 82;
 IO_PORT "led_state" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_an_o[3]" 117;
+
+// 数码管位选信号 (4位，低电平有效)
+IO_LOC "disp_an_o[3]" 117;  // 最左边数码管
 IO_PORT "disp_an_o[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_an_o[2]" 121;
+IO_LOC "disp_an_o[2]" 121;  // 左边第二个数码管
 IO_PORT "disp_an_o[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_an_o[1]" 126;
+IO_LOC "disp_an_o[1]" 126;  // 右边第二个数码管
 IO_PORT "disp_an_o[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_an_o[0]" 131;
+IO_LOC "disp_an_o[0]" 131;  // 最右边数码管
 IO_PORT "disp_an_o[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[6]" 87;
+
+// 7段数码管段信号 (a-g，低电平有效)
+IO_LOC "disp_seg_o[6]" 87;   // 段a (顶部横线)
 IO_PORT "disp_seg_o[6]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[5]" 97;
+IO_LOC "disp_seg_o[5]" 97;   // 段b (右上竖线)
 IO_PORT "disp_seg_o[5]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[4]" 118;
+IO_LOC "disp_seg_o[4]" 118;  // 段c (右下竖线)
 IO_PORT "disp_seg_o[4]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[3]" 122;
+IO_LOC "disp_seg_o[3]" 122;  // 段d (底部横线)
 IO_PORT "disp_seg_o[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[2]" 128;
+IO_LOC "disp_seg_o[2]" 128;  // 段e (左下竖线)
 IO_PORT "disp_seg_o[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[1]" 132;
+IO_LOC "disp_seg_o[1]" 132;  // 段f (左上竖线)
 IO_PORT "disp_seg_o[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "disp_seg_o[0]" 136;
+IO_LOC "disp_seg_o[0]" 136;  // 段g (中间横线)
 IO_PORT "disp_seg_o[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+
+// ==================== 输入信号引脚分配 ====================
+
+// 电源开关 (拨码开关)
 IO_LOC "power_switch" 15;
 IO_PORT "power_switch" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
-IO_LOC "set_buttons[3]" 49;
+
+// 设置按钮组 [3:电源, 2:分钟+, 1:秒+, 0:暂停]
+IO_LOC "set_buttons[3]" 49;  // 电源按钮
 IO_PORT "set_buttons[3]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
-IO_LOC "set_buttons[2]" 47;
+IO_LOC "set_buttons[2]" 47;  // 分钟+按钮
 IO_PORT "set_buttons[2]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
-IO_LOC "set_buttons[1]" 45;
+IO_LOC "set_buttons[1]" 45;  // 秒+按钮
 IO_PORT "set_buttons[1]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
-IO_LOC "set_buttons[0]" 43;
+IO_LOC "set_buttons[0]" 43;  // 暂停按钮
 IO_PORT "set_buttons[0]" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+
+// 时间设置模式切换信号
 IO_LOC "set_time_mode" 41;
 IO_PORT "set_time_mode" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+
+// 暂停/恢复控制信号
 IO_LOC "pause_resume" 34;
 IO_PORT "pause_resume" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+
+// 复位信号 (低电平有效)
 IO_LOC "rst" 39;
 IO_PORT "rst" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+
+// 系统时钟输入 (50MHz)
 IO_LOC "clk" 11;
 IO_PORT "clk" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;

@@ -51,3 +51,96 @@
 *.ipstatic
 *.ip_repo
 *.xsim.dir
+
+# FPGA项目通用忽略文件
+
+# 高云FPGA开发工具生成的文件
+Time_project/impl/
+Time_project/Time_project.gprj.user
+*.fs
+*.bin
+*.binx
+*.db
+*.rpt.txt
+*.timing_paths
+*.prj
+*.vg
+
+# 临时文件和缓存
+*.tmp
+*.temp
+*.cache
+*.log
+*.bak
+*.swp
+*.swo
+*~
+
+# 编译输出
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+
+# Altium Designer文件
+*.SchDocPreview
+*.PcbDocPreview
+*.PrjPcbStructure
+Project Logs*/
+Project Outputs*/
+History/
+__Previews/
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 文档临时文件
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# 备份文件
+*.backup
+*.old
+*.orig
+
+# 仿真文件
+*.vcd
+*.wave
+*.dump
+sim/
+
+# 综合和布局布线报告
+*.rpt
+*.sdf
+*.sdc
+*.qpf
+*.qsf
+
+# 用户特定文件
+*.user
+*.local
+
+# 大型二进制文件（可选，根据需要调整）
+# *.bit
+# *.bin
+# *.sof
