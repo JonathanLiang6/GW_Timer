@@ -1,2 +1,153 @@
-*.html linguist-language=none
-*.fs linguist-language=none
+# 设置默认行为，如果core.autocrlf没有设置，Git会自动处理行尾
+* text=auto
+
+# 明确声明文本文件
+*.md text
+*.txt text
+*.c text
+*.h text
+*.cpp text
+*.hpp text
+*.v text
+*.vh text
+*.sv text
+*.svh text
+*.cst text
+*.gprj text
+*.xml text
+*.json text
+*.yaml text
+*.yml text
+*.ini text
+*.cfg text
+*.conf text
+*.sh text
+*.bat text
+*.cmd text
+*.ps1 text
+*.py text
+*.js text
+*.css text
+*.html text
+*.htm text
+*.sql text
+*.csv text
+*.tsv text
+*.log text
+
+# 二进制文件
+*.bin binary
+*.bit binary
+*.sof binary
+*.pof binary
+*.rbf binary
+*.rpd binary
+*.hex binary
+*.mem binary
+*.coe binary
+*.mif binary
+*.dat binary
+*.wav binary
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.bz2 binary
+*.xz binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+*.lib binary
+*.obj binary
+*.o binary
+
+# 文档文件
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.odt binary
+*.ods binary
+*.odp binary
+
+# Altium Designer文件
+*.SchDoc binary
+*.PcbDoc binary
+*.PrjPcb binary
+*.SchLib binary
+*.PcbLib binary
+*.IntLib binary
+*.PcbDocPreview binary
+*.SchDocPreview binary
+
+# 高云FPGA工具文件
+*.fs binary
+*.binx binary
+*.db binary
+*.prj binary
+*.vg binary
+
+# 源代码文件的行尾处理
+*.v text eol=lf
+*.vh text eol=lf
+*.sv text eol=lf
+*.svh text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Windows批处理文件保持CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 配置文件
+*.cst text eol=lf
+*.gprj text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+# 大型文件处理
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.bit filter=lfs diff=lfs merge=lfs -text
+*.sof filter=lfs diff=lfs merge=lfs -text
+*.pof filter=lfs diff=lfs merge=lfs -text
+*.rbf filter=lfs diff=lfs merge=lfs -text
+*.rpd filter=lfs diff=lfs merge=lfs -text
+*.SchDoc filter=lfs diff=lfs merge=lfs -text
+*.PcbDoc filter=lfs diff=lfs merge=lfs -text
+*.PrjPcb filter=lfs diff=lfs merge=lfs -text
+*.SchLib filter=lfs diff=lfs merge=lfs -text
+*.PcbLib filter=lfs diff=lfs merge=lfs -text
+*.IntLib filter=lfs diff=lfs merge=lfs -text
+
+# 导出文件
+export-ignore .gitattributes
+export-ignore .gitignore
+export-ignore README.md
+export-ignore LICENSE
