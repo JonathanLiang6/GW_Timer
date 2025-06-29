@@ -1,152 +1,113 @@
-# 设置默认行为，如果core.autocrlf没有设置，Git会自动处理行尾
+# ===================================================================
+# 硬件设计与硬件编程综合项目 Git 属性配置
+# 适用于：FPGA设计、PCB设计、硬件描述语言项目
+# 基于实际项目文件结构优化
+# ===================================================================
+
+# 全局文本处理设置
 * text=auto
 
-# 明确声明文本文件
-*.md text
-*.txt text
-*.c text
-*.h text
-*.cpp text
-*.hpp text
-*.v text
-*.vh text
-*.sv text
-*.svh text
-*.cst text
-*.gprj text
-*.xml text
-*.json text
-*.yaml text
-*.yml text
-*.ini text
-*.cfg text
-*.conf text
-*.sh text
-*.bat text
-*.cmd text
-*.ps1 text
-*.py text
-*.js text
-*.css text
-*.html text
-*.htm text
-*.sql text
-*.csv text
-*.tsv text
-*.log text
+# ==================== 硬件描述语言文件 ====================
+# Verilog 文件 (项目中实际使用)
+*.v text eol=lf
+*.vh text eol=lf
 
-# 二进制文件
-*.bin binary
-*.bit binary
-*.sof binary
-*.pof binary
-*.rbf binary
-*.rpd binary
-*.hex binary
-*.mem binary
-*.coe binary
-*.mif binary
-*.dat binary
-*.wav binary
-*.mp3 binary
-*.mp4 binary
-*.avi binary
-*.mov binary
-*.jpg binary
-*.jpeg binary
-*.png binary
-*.gif binary
-*.bmp binary
-*.ico binary
-*.pdf binary
-*.zip binary
-*.rar binary
-*.7z binary
-*.tar binary
-*.gz binary
-*.bz2 binary
-*.xz binary
-*.exe binary
-*.dll binary
-*.so binary
-*.dylib binary
-*.a binary
-*.lib binary
-*.obj binary
-*.o binary
+# 硬件描述语言文件标记
+*.v linguist-language=Verilog
+*.vh linguist-language=Verilog
 
-# 文档文件
-*.doc binary
-*.docx binary
-*.xls binary
-*.xlsx binary
-*.ppt binary
-*.pptx binary
-*.odt binary
-*.ods binary
-*.odp binary
+# ==================== FPGA 工具文件 ====================
+# 高云FPGA约束文件 (项目中实际使用)
+*.cst text eol=lf
 
-# Altium Designer文件
+# 高云FPGA项目文件 (项目中实际使用)
+*.gprj text eol=lf
+*.prj text eol=lf
+
+# 配置文件 (项目中实际使用)
+*.json text eol=lf
+*.xml text eol=lf
+*.cfg text eol=lf
+*.do text eol=lf
+
+# ==================== PCB 设计文件 ====================
+# Altium Designer 文件 (项目中实际使用)
 *.SchDoc binary
 *.PcbDoc binary
 *.PrjPcb binary
 *.SchLib binary
 *.PcbLib binary
-*.IntLib binary
-*.PcbDocPreview binary
-*.SchDocPreview binary
+*.PrjPcbStructure binary
 
-# 高云FPGA工具文件
-*.fs binary
-*.binx binary
-*.db binary
-*.prj binary
-*.vg binary
-
-# 源代码文件的行尾处理
-*.v text eol=lf
-*.vh text eol=lf
-*.sv text eol=lf
-*.svh text eol=lf
-*.c text eol=lf
-*.h text eol=lf
-*.cpp text eol=lf
-*.hpp text eol=lf
-*.py text eol=lf
-*.sh text eol=lf
+# ==================== 文档文件 ====================
+# Markdown 和文本文件 (项目中实际使用)
 *.md text eol=lf
 *.txt text eol=lf
 
-# Windows批处理文件保持CRLF
-*.bat text eol=crlf
-*.cmd text eol=crlf
+# 技术文档 (项目中实际使用)
+*.docx binary
+*.xmind binary
 
-# 配置文件
-*.cst text eol=lf
-*.gprj text eol=lf
-*.xml text eol=lf
-*.json text eol=lf
-*.yaml text eol=lf
-*.yml text eol=lf
-*.ini text eol=lf
-*.cfg text eol=lf
-*.conf text eol=lf
+# ==================== 仿真和测试文件 ====================
+# 测试文件 (项目中实际使用)
+*_tb.v text eol=lf
 
-# 大型文件处理
+# ==================== 二进制和生成文件 ====================
+# 高云FPGA 比特流文件 (项目中实际使用)
+*.bin binary
+*.binx binary
+*.fs binary
+*.db binary
+*.vg binary
+
+# 编译输出文件 (项目中实际使用)
+*.log text eol=lf
+*.html text eol=lf
+*.rpt text eol=lf
+
+# ==================== 大型文件处理 (Git LFS) ====================
+# FPGA 比特流文件
 *.bin filter=lfs diff=lfs merge=lfs -text
-*.bit filter=lfs diff=lfs merge=lfs -text
-*.sof filter=lfs diff=lfs merge=lfs -text
-*.pof filter=lfs diff=lfs merge=lfs -text
-*.rbf filter=lfs diff=lfs merge=lfs -text
-*.rpd filter=lfs diff=lfs merge=lfs -text
+*.binx filter=lfs diff=lfs merge=lfs -text
+*.fs filter=lfs diff=lfs merge=lfs -text
+
+# PCB 设计文件
 *.SchDoc filter=lfs diff=lfs merge=lfs -text
 *.PcbDoc filter=lfs diff=lfs merge=lfs -text
 *.PrjPcb filter=lfs diff=lfs merge=lfs -text
 *.SchLib filter=lfs diff=lfs merge=lfs -text
 *.PcbLib filter=lfs diff=lfs merge=lfs -text
-*.IntLib filter=lfs diff=lfs merge=lfs -text
 
-# 导出文件
+# 文档文件
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.xmind filter=lfs diff=lfs merge=lfs -text
+
+# ==================== 语言统计优化 ====================
+# 排除非代码文件的语言统计
+*.md linguist-documentation
+*.txt linguist-documentation
+*.docx linguist-documentation
+*.xmind linguist-documentation
+
+# 排除生成文件
+*.bin linguist-generated
+*.binx linguist-generated
+*.fs linguist-generated
+*.db linguist-generated
+*.vg linguist-generated
+*.log linguist-generated
+*.html linguist-generated
+*.rpt linguist-generated
+
+# 排除二进制文件
+*.SchDoc linguist-vendored
+*.PcbDoc linguist-vendored
+*.PrjPcb linguist-vendored
+*.SchLib linguist-vendored
+*.PcbLib linguist-vendored
+
+# ==================== 导出配置 ====================
+# 导出时忽略的文件
 export-ignore .gitattributes
 export-ignore .gitignore
 export-ignore README.md
